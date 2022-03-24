@@ -1,0 +1,294 @@
+:root{
+--ubuntu-font : 'Ubuntu', sans-serif;
+--overpass-font: 'Overpass', sans-serif;
+--grayish-blue : hsl(240, 2%, 79%);
+--very-dark-grayish-blue: hsl(207, 13%, 34%);
+--very-dark-black-blue: hsl(240, 10%, 16%);
+--white-color:  hsl(0, 0%, 100%);
+--Light-red: hsl(356, 100%, 66%);
+--Very-light-red: hsl(355, 100%, 74%);
+
+
+
+--heading-mobile: 1.8rem;
+--heading-main-lg: 1.6rem;
+
+--font-sm-text: 1rem;
+}
+
+
+.btn-light{
+    background-color: hsl(0, 0%, 100%) ;
+    color: hsl(356, 100%, 66%);
+    padding: 10px 10px;
+    border-radius: 100px;
+    border:none ;
+    font-weight: 600;
+    font-size: 16px;
+}
+.btn-dark{
+    background-color: hsl(355, 100%, 74%) ;
+    color: hsl(0, 0%, 100%);
+    padding: 10px 10px;
+    border-radius: 100px;
+    border:none ;
+    font-weight: 600;
+    font-size: 16px;
+}
+.btn-outline{
+    background-color: hsl(355, 100%, 74%) ;
+    color: hsl(0, 0%, 100%);
+    padding: 10px 10px;
+    border-radius: 100px;
+    border:2px solid hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 16px;
+
+}
+
+.pad-10{
+    padding: 0 10px;
+}
+
+*,html,body{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    overflow-x:hidden ;
+}
+.mobile-images{
+    display: none;
+}
+.section{
+    background-image: url(./images/bg-pattern-intro-desktop.svg);
+    background-position: 25% 50%;
+    background-color: var(--Light-red);
+    color: hsl(0, 0%, 100%);
+    height: 600px;
+    width: 100%;
+    border-radius: 0 0 0 100px;
+    font-family:var(--overpass-font) ;
+    text-align: center;
+
+}
+
+.burger{
+    display: none;
+}
+.nav{
+    margin-left: 33rem;
+    color: var(--white-color);
+}
+.nav .nav-list{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    list-style: none;
+    
+}
+.nav .nav-list a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-family: var(--overpass-font);
+    font-weight: 300;
+    font-size: 1rem;
+    
+}
+
+.nav .nav-list ul .sub-item{
+    list-style: none;
+    font-family: var(--overpass-font);
+    padding-top: 0.5rem;
+    color: black;
+    
+}
+
+.nav .nav-list .dropdown:hover{
+      text-decoration: underline;
+      cursor: pointer;
+}
+.nav .nav-list ul{
+    display: flex ;
+    flex-direction: column;
+    padding: 2rem 4rem 2rem 1rem;
+    text-align: left;
+    
+    list-style: none;
+
+    background-color: var(--white-color);
+    color: black;
+    
+    border-radius: 5px;
+    box-shadow:7px 9px 21px -5px rgb(161, 161, 161);
+
+    position: absolute;
+    top: 4.3rem;
+    
+}
+
+
+.nav .nav-list ul li{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    width: 6rem;
+}
+.nav .nav-list ul{
+    display: none;
+}
+.nav ul li:hover > ul{
+    display: block;
+}
+
+.nav .nav-list ul .sub-item:hover{
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.hero-sec .logo{
+    position: relative;
+    top: 2rem;
+    left: 20rem;
+    width: 100px;
+    font-size: 3rem;
+    
+}
+
+.buttons{
+    position: absolute;
+    top: 2.5rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+    gap: 2rem;
+}
+.hero-sec .hero-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.hero-text h1{
+    font-size: 4rem ;
+}
+.hero-text p{
+    font-size: 1.5rem;
+}
+
+.btn-light:hover{
+     color: var(--white-color);
+     background-color: var(--Very-light-red);
+}
+.btn-dark:hover{
+    color: var(--white-color);
+    background-color: var(--Light-red);
+}
+.btn-outline:hover{
+    color: var(--Light-red);
+    background-color: var(--white-color);
+}
+
+.main{
+    padding: 10rem 10rem 0 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    font-family: var(--overpass-font);
+}
+
+.main .main-heading{
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    color: var(--very-dark-grayish-blue);
+}
+
+.main .main-text{
+    padding: 5rem 0;
+    width: 50%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3rem;
+    color: var(--very-dark-grayish-blue);
+}
+
+.main .main-text .para{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 5rem;
+}
+.main .main-text .para h2{
+    font-size: 2rem;
+}
+.main .main-text .para p{
+    font-size: 1.2rem;
+    word-spacing: 5px;
+
+}
+
+.main-image{
+   position: relative;
+   top: -50rem;
+   right: -56rem;
+   height: 70%;
+   width: 70%;
+   
+}
+   
+.mobile{
+    background-color: var(--very-dark-black-blue);
+    background-image: url(./images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: -20% 80%;
+    height:400px;
+    width: 100%;
+    border-radius: 0 100px 0 100px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+
+    color: var(--white-color);
+    font-family: var(--overpass-font);
+    
+    margin-top: -40rem;
+}
+
+.mobile .circles{
+    position: relative;
+    top: -10px;
+    height: 80%;
+    width: 40%;   
+}
+
+.mobile .phones{
+position: relative;
+top: -4rem;
+right: -8rem;
+z-index: 99;
+}
+
+.mobile-text{
+    padding: 5rem 4rem;    
+}
+
+.mobile-text h1{
+       font-size: 3.5rem;
+}
+.mobile-text p{
+       font-size: 1.2rem;
+       word-spacing: 3px;
+       font-weight: 200;
+}
